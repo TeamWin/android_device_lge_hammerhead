@@ -14,3 +14,5 @@
 /aboot		emmc	/dev/block/platform/msm_sdcc.1/by-name/aboot
 /imgdata	emmc	/dev/block/platform/msm_sdcc.1/by-name/imgdata
 /usb-otg      vfat          /dev/block/sda1     /dev/block/sda  flags=removable;storage;display=USB-OTG
+/efs1 emmc /dev/block/platform/msm_sdcc.1/by-name/modemst1  flags=backup=1;display=EFS
+/efs2 emmc /dev/block/platform/msm_sdcc.1/by-name/modemst2  flags=backup=1;subpartitionof=/efs1
