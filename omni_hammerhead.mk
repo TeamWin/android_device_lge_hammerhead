@@ -34,6 +34,7 @@ PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/google/msm
