@@ -36,7 +36,7 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 
 # Kernel inline build
-TARGET_KERNEL_SOURCE := kernel/google/msm
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 TARGET_VARIANT_CONFIG := custom_hammerhead_defconfig
 TARGET_SELINUX_CONFIG := custom_hammerhead_defconfig
