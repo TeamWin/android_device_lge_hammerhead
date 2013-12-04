@@ -221,7 +221,7 @@ on post-fs-data
 
     # Torch
     chown system camera /sys/class/leds/led:flash_torch/brightness
-    chmod 0660 /sys/class/leds/led:flash_torch/brightness
+    chmod 0666 /sys/class/leds/led:flash_torch/brightness
 
 on charger
     # Booting modem
