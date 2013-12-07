@@ -1,8 +1,8 @@
 [
   {
     "remote": "omnirom",
-    "repository": "android_kernel_google_msm",
+    "repository": "android_kernel_lge_hammerhead",
     "target_path": "kernel/lge/hammerhead",
-    "revision": "android-msm-hammerhead-3.4-kk-r1"
+    "revision": "android-4.4"
   }
 ]
