@@ -73,6 +73,7 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 TARGET_USES_ION := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 23068672
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
@@ -120,6 +121,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 # The real path for this is /sys/devices/mdp.0/qcom,cmdss_fb_primary.160/leds/lcd-backlight/brightness but the comma doesn't compile correctly
 TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.160/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
-TW_NO_SCREEN_TIMEOUT := true
+#TW_NO_SCREEN_TIMEOUT := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_SUPPRESS_SECURE_ERASE := true
