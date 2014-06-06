@@ -31,7 +31,8 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/lge/hammerhead/init.recovery.hammerhead.rc:root/init.recovery.hammerhead.rc
 
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \

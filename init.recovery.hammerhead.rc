@@ -1,0 +1,4 @@
+
+on boot
+	service permissivemode /sbin/setenforce 0
+	oneshot
