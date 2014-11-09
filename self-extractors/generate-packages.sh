@@ -44,19 +44,18 @@ do
     ;;
   lge)
     TO_EXTRACT="\
-            system/app/qcrilmsgtunnel.apk \
-            system/app/SprintHiddenMenu.apk \
+            system/app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
             system/app/UpdateSetting.apk \
-            system/etc/Bluetooth_cal.acdb \
-            system/etc/General_cal.acdb \
-            system/etc/Global_cal.acdb \
-            system/etc/Handset_cal.acdb \
-            system/etc/Hdmi_cal.acdb \
-            system/etc/Headset_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_General_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
             system/etc/permissions/serviceitems.xml \
             system/etc/qcril.db \
             system/etc/sensor_def_hh.conf \
-            system/etc/Speaker_cal.acdb \
+            system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
             system/framework/serviceitems.jar \
             system/vendor/bin/vss_init \
             system/vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin \
@@ -194,7 +193,8 @@ do
             system/vendor/lib/libizat_core.so \
             system/vendor/lib/libjpegdhw.so \
             system/vendor/lib/libjpegehw.so \
-            system/vendor/lib/libllvm-a3xx.so \
+            system/vendor/lib/libllvm-qcom.so \
+            system/vendor/lib/libbccQTI.so \
             system/vendor/lib/libloc_api_v02.so \
             system/vendor/lib/libloc_ds_api.so \
             system/vendor/lib/libmmcamera2_c2d_module.so \
