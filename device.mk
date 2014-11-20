@@ -19,9 +19,24 @@
 #
 # Everything in this directory will become public
 
+$(shell mkdir -p out/target/product/hammerhead/recovery/root/vendor/firmware/keymaster)
+$(shell mkdir -p out/target/product/hammerhead/recovery/root/vendor/lib/hw)
 
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/lge/hammerhead/recovery/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00 \
+    device/lge/hammerhead/recovery/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01 \
+    device/lge/hammerhead/recovery/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02 \
+    device/lge/hammerhead/recovery/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03 \
+    device/lge/hammerhead/recovery/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt \
+    device/lge/hammerhead/recovery/cmnlib.b00:recovery/root/vendor/firmware/cmnlib.b00 \
+    device/lge/hammerhead/recovery/cmnlib.b01:recovery/root/vendor/firmware/cmnlib.b01 \
+    device/lge/hammerhead/recovery/cmnlib.b02:recovery/root/vendor/firmware/cmnlib.b02 \
+    device/lge/hammerhead/recovery/cmnlib.b03:recovery/root/vendor/firmware/cmnlib.b03 \
+    device/lge/hammerhead/recovery/cmnlib.mdt:recovery/root/vendor/firmware/cmnlib.mdt \
+    device/lge/hammerhead/recovery/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so \
+    device/lge/hammerhead/recovery/keystore.msm8974.so:recovery/root/vendor/lib/hw/keystore.msm8974.so
+
 
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
