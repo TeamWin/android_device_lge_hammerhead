@@ -1,5 +1,5 @@
 /system                ext4        /dev/block/platform/msm_sdcc.1/by-name/system
-/data                ext4        /dev/block/platform/msm_sdcc.1/by-name/userdata
+/data                ext4        /dev/block/platform/msm_sdcc.1/by-name/userdata  flags=encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /cache                ext4        /dev/block/platform/msm_sdcc.1/by-name/cache
 /persist        ext4        /dev/block/platform/msm_sdcc.1/by-name/persist
 /firmware        vfat        /dev/block/platform/msm_sdcc.1/by-name/modem
