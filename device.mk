@@ -23,6 +23,7 @@ $(shell mkdir -p out/target/product/hammerhead/recovery/root/vendor/firmware/key
 $(shell mkdir -p out/target/product/hammerhead/recovery/root/vendor/lib/hw)
 
 PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/zImage-dtb:kernel \
     device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab \
     device/lge/hammerhead/recovery/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00 \
     device/lge/hammerhead/recovery/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01 \
